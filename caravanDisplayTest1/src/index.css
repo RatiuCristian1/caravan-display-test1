@@ -46,11 +46,26 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
+  position: relative;
 
 }
 
 .home--welcome {
   margin: 0;
+  font-size: 1.1em;
+}
+
+.home--caravan--button {
+  position: absolute;
+  text-decoration: none;
+  color: #161616;
+  background-color: orange;
+  padding: 0.8em 4.5em;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  bottom: 80px;
+  left: 30px;
 }
 
 .navigation--el a {
@@ -70,6 +85,23 @@ footer {
   align-items: center;
   margin-top: auto;
   font-weight: 500;
+}
+
+.caravan-image {
+  width: 400px;
+  max-width: 700px;
+}
+
+.caravans-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.caravan-list {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 
