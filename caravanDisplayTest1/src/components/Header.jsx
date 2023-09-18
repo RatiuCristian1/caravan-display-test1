@@ -5,7 +5,8 @@ export default function Header() {
     return (
         <header>
         <Link className="site--logo" to="/" >Caravans World</Link>
-            <nav>
+            <nav className="navigation--el">
+                <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/caravans">Caravans</Link>
             </nav>
