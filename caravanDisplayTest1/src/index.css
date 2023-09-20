@@ -21,6 +21,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 header {
@@ -41,12 +42,13 @@ header {
 }
 
 .home--container {
-  height: 85vh;
+  height: 88vh;
   background-image: url(assets/images/alpina_Caravan_cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
   position: relative;
+  
 
 }
 
@@ -60,12 +62,14 @@ header {
   text-decoration: none;
   color: #161616;
   background-color: orange;
-  padding: 0.8em 4.5em;
+  padding: 0.6em 4.5em;
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 5px;
   bottom: 80px;
   left: 30px;
+  transition: bottom 1.5s ease;
+  bottom: -140px;
 }
 
 .navigation--el a {
@@ -88,13 +92,15 @@ footer {
 }
 
 .caravan-image {
-  width: 400px;
-  max-width: 700px;
+  width: 700px;
+  max-width: 650px;
+  height: 280px;
+  border: 1px solid gray;
 }
 
 .caravans-container {
-  max-width: 850px;
-  margin: 0 auto;
+  max-width: 1450px;
+  margin: 0 auto 50px;
 }
 
 .caravan-list {
@@ -102,6 +108,22 @@ footer {
   /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 20px;
+}
+
+
+.animate-slide-up {
+  /* Use CSS transitions to create the animation effect */
+  /* transition: bottom 0.5s ease; Adjust the animation duration and easing function as needed */
+
+  /* Define the final position of the button after the animation */
+  bottom: 50px; /* Adjust the final position as needed */
+}
+
+.layout--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 
