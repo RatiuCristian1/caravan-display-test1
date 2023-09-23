@@ -21,12 +21,21 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+}
+
+.layout--container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Allow main content to expand and fill available space */
 }
 
 header {
   height: 80px;
-  background-color: #F6F2CB;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
 }
@@ -42,12 +51,14 @@ header {
 }
 
 .home--container {
-  height: 88vh;
+  height: 92.25vh;
   background-image: url(assets/images/alpina_Caravan_cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   
 
 }
@@ -58,18 +69,17 @@ header {
 }
 
 .home--caravan--button {
-  position: absolute;
   text-decoration: none;
-  color: #161616;
+  color: #071e86;
   background-color: orange;
   padding: 0.6em 4.5em;
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 5px;
-  bottom: 80px;
-  left: 30px;
-  transition: bottom 1.5s ease;
-  bottom: -140px;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  
 }
 
 .navigation--el a {
@@ -81,50 +91,52 @@ header {
 
 footer {
   background-color: #161616;
-  color: rgb(235, 243, 188);
-  height: 74px;
+  color: rgb(240, 247, 176);
+  height: 77px;
   display: flex;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
   font-weight: 500;
-}
-
-.caravan-image {
-  width: 700px;
-  max-width: 650px;
-  height: 280px;
-  border: 1px solid gray;
-}
-
-.caravans-container {
-  max-width: 1450px;
-  margin: 0 auto 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .caravan-list {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 20px;
 }
 
-
-.animate-slide-up {
-  /* Use CSS transitions to create the animation effect */
-  /* transition: bottom 0.5s ease; Adjust the animation duration and easing function as needed */
-
-  /* Define the final position of the button after the animation */
-  bottom: 50px; /* Adjust the final position as needed */
+.caravan-card {
+  flex-basis: calc(50% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
-.layout--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.caravan-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.caravans-container {
+  max-width: 1250px;
   height: 100vh;
+  margin: 20px auto;
+  margin-bottom: 500px;
+
 }
+
+
+@media  screen and (max-width: 800px) {
+  .caravan-card {
+    flex-basis: 100%;
+  }
+}
+
 
 
 
