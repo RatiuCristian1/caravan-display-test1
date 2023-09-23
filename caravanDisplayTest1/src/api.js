@@ -30,14 +30,22 @@ const storage = getStorage(app);
 
 export { db };
 
-// const vansCollectionRef = collection(db, "caravans")
+export async function getVan(id) {
+  const docRef = doc(db, "caravans", id)
+  const snapshot = await getDoc(docRef)
+  const caravanData = snapshot.data();
+  
+  // Check if there's an imagePath property
+  if (caravanData.imagePath) {
+      const imageRef = ref(storage, caravanData.imagePath);
 
-// export async function getVans() {
-//     const snapshot = await getDocs(vansCollectionRef)
-//     const vans = snapshot.docs.map(doc => ({
-//         ...doc.data(),
-//         id: doc.id
-//     }))
-//     console.log(vans)
-//     return vans
-// }
+      try {
+          const imageUrl = await getDownloadURL(imageRef);
+          return { ...caravanData, id: snapshot.id, imageUrl };
+      } catch (error) {
+          console.error('Error fetching image URL:', error);
+      }
+  }
+
+  return { ...caravanData, id: snapshot.id };
+}
