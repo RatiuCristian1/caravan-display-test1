@@ -83,7 +83,15 @@ header {
   width: 350px;
   margin: 350px auto 0;
   text-align: center;
+  position: relative; /* Add position: relative; */
+  bottom: 0;
+  transition: bottom 1s ease;
   
+}
+
+.animate-slide-up {
+  /* Update the bottom property to move the button up */
+  bottom: 40px; /* Adjust the final position as needed */
 }
 
 .navigation--el a {
