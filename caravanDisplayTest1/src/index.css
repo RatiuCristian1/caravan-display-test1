@@ -33,6 +33,10 @@ main {
   flex: 1; /* Allow main content to expand and fill available space */
 }
 
+h1 {
+  margin: 0;
+}
+
 header {
   height: 80px;
   background-color: #ffffff;
@@ -107,6 +111,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .caravan-card {
@@ -116,17 +122,33 @@ footer {
 }
 
 .caravan-image {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  width: 680px;
+  height: 280px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and center the image */
   border: 1px solid gray;
   border-radius: 4px;
 }
 
 .caravans-container {
-  max-width: 1250px;
-  height: 100vh;
-  margin: 20px auto;
-  margin-bottom: 500px;
+  max-width: 1450px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  background-color: #ffffff;
+}
+
+.caravan-description {
+  color: #161616;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.caravan-link {
+  text-decoration: none;
+  color: #161616;
+  font-weight: 500;
+  cursor: pointer;
 
 }
 
