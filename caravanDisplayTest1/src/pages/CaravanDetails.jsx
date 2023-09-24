@@ -42,7 +42,7 @@ export default function CaravanDetail() {
                 to={`..${search}`}
                 relative="path"
                 className="back-button"
-            >&larr; <span>Back to {type} vans</span></Link>
+            >&larr; <span className="back-button-text">Back to {type} vans</span></Link>
             
             {van && (
                 <div className="van-detail">
