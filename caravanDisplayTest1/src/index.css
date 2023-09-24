@@ -35,23 +35,31 @@ main {
 
 h1 {
   margin: 0;
+  color: #161616;
+}
+
+.caravans--title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 header {
   height: 80px;
-  background-color: #ffffff;
+  background-color: #161616;
   display: flex;
   align-items: center;
+  box-shadow: 0 0 10px rgb(236, 233, 233);
 }
 
 .site--logo{
   margin-right: auto;
   text-decoration: none;
-  color: #161616;
+  color: #f3efef;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
-  margin-left: 0.5em;
+  margin-left: 3.5em;
 }
 
 .home--container {
@@ -96,8 +104,8 @@ header {
 
 .navigation--el a {
   text-decoration: none;
-  margin-right: 0.75em;
-  color: #161616;
+  margin-right: 3em;
+  color: #f3efef;
   font-weight: 500;
 }
 
@@ -130,26 +138,37 @@ footer {
 }
 
 .caravan-image {
-  /* max-width: 100%; */
   width: 680px;
   height: 280px; /* Set a fixed height */
   object-fit: cover; /* Maintain aspect ratio and center the image */
+  border: 1px solid rgb(207, 206, 206);
+  border-radius: 4px;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.caravan-image:hover {
+  width: 700px;
+  height: 300px; /* Set a fixed height */
+  /* object-fit: cover; 
   border: 1px solid gray;
   border-radius: 4px;
+  overflow: hidden;
+  transition: 0.2s ease-in-out; */
 }
 
 .caravans-container {
   max-width: 1450px;
-  margin: 0 auto;
+  margin: 10px auto;
   margin-bottom: 150px;
   background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(165, 162, 162);
 }
 
 .caravan-description {
   color: #161616;
   font-weight: 600;
   font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 
 .caravan-link {
@@ -161,11 +180,47 @@ footer {
 }
 
 
-@media  screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .caravan-card {
     flex-basis: 100%;
+    text-align: center; /* Center the content horizontally */
   }
+
+  .caravans-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caravan-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caravan-image {
+    max-width: 100%; /* Make the images responsive to the container width */
+    height: auto; /* Let the height adjust to maintain aspect ratio */
+    object-fit: cover;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 4px;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  }
+
+  .caravan-image:hover {
+    width: 690px;
+    height: auto;
+  }
+
 }
+
+.caravan--detail--image {
+  width: 500px;
+}
+
 
 
 

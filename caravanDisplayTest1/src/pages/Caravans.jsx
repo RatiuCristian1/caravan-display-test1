@@ -46,18 +46,17 @@ export default function Caravans() {
 
   return (
     <div className="caravans-container">
-      <h1>Caravans</h1>
+      <h1 className="caravans--title">Caravans</h1>
       <div className="caravan-list">
         {caravans.map((caravan) => (
           <div key={caravan.id} className="caravan-card">
+            <Link to={`/caravans/${caravan.id}`} className="caravan-link">
             <img
               src={caravan.imageUrl}
               alt={caravan.description}
               className="caravan-image"
             />
             <div className="caravan-description">{caravan.description}</div>
-            <Link to={`/caravans/${caravan.id}`} className="caravan-link">
-              View Details
             </Link>
           </div>
         ))}
