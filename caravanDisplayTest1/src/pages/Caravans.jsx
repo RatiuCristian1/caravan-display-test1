@@ -56,7 +56,7 @@ export default function Caravans() {
               alt={caravan.description}
               className="caravan-image"
             />
-            <div className="caravan-description">{caravan.description}</div>
+            {/* <div className="caravan-description">{caravan.description}</div> */}
             </Link>
           </div>
         ))}

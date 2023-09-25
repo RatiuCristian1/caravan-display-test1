@@ -37,7 +37,7 @@ export default function CaravanDetail() {
     const type = location.state?.type || "all";
     
     return (
-        <div className="van-detail-container">
+        <div className="caravan-detail-container">
             <Link
                 to={`..${search}`}
                 relative="path"
@@ -45,14 +45,14 @@ export default function CaravanDetail() {
             >&larr; <span className="back-button-text">Back to {type} vans</span></Link>
             
             {van && (
-                <div className="van-detail">
+                <div className="caravan-detail">
                     <img src={van.imageUrl} className="caravan--detail--image" />
-                    <i className={`van-type ${van.type} selected`}>
+                    {/* <i className={`van-type ${van.type} selected`}>
                         {van.type}
-                    </i>
+                    </i> */}
                     <h2>{van.name}</h2>
-                    <p className="van-price"><span>${van.price}</span>/day</p>
-                    <p>{van.description}</p>
+                    <p className="caravan-price"><span>${van.price}</span>/day</p>
+                    <p className="caravan--details-description">{van.description}</p>
                     <button className="link-button">Rent this van</button>
                 </div>
             )}
