@@ -16,7 +16,10 @@ export default function Home() {
 
     return (
         <div className="home--container">
-            <h1 className="home--welcome">Welcome to my webpage</h1>
+            <div className="home--conatiner--text">
+                <h1 className="home--welcome">Begin Your Caravan Story Today</h1>
+                <p className="home--welcome--paragraph">Whether you're dreaming of weekend getaways, cross-country road trips, or epic adventures, we invite you to begin your caravan story with us. Explore our range of caravans, connect with fellow travelers in our community, and embark on a new chapter of exploration and freedom.</p>  
+            </div>
             <Link className={`home--caravan--button ${animateButton ? 'animate-slide-up' : ''}`} to="caravans">
                 Find your caravan
             </Link>

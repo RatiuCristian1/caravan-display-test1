@@ -94,9 +94,43 @@ header {
 
 }
 
+.home--conatiner--text {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+
 .home--welcome {
-  margin: 0;
+  margin-left: auto;
   font-size: 1.1em;
+  color: #e3e5ee;
+}
+
+@media screen and (min-width: 800px) {
+  .home--conatiner--text {
+    width: 550px;
+    margin-right: 150px;
+    background-color: rgba(15, 8, 8, 0.404);
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 2.5em;
+  
+  }
+
+  .home--welcome {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 0px 0px 10px #26693a;
+  }
+
+  .home--welcome--paragraph {
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    text-shadow: 0px 0px 10px #26693a;
+  }
 }
 
 .home--caravan--button {
