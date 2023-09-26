@@ -52,12 +52,19 @@ header {
   box-shadow: 0 0 10px rgb(236, 233, 233);
 }
 
+@media screen and (max-width: 800px) {
+  .navigation--el {
+    font-size: 0.8rem;
+    margin-right: -10px;
+  }
+}
+
 .site--logo {
   display: flex;
 }
 
 .site--logo--image {
-  background-image: url(assets/images/logo1.png);
+  background-image: url(assets/images/logo3.png);
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -104,8 +111,8 @@ header {
   margin: 350px auto 0;
   text-align: center;
   position: relative; /* Add position: relative; */
-  bottom: -170px;
-  transition: bottom 1.5s ease;
+  bottom: 0px;
+  transition: bottom 1s ease;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   border: 0.4px solid rgb(20, 146, 41);
   
@@ -113,7 +120,7 @@ header {
 
 .animate-slide-up {
   /* Update the bottom property to move the button up */
-  bottom: 0px; /* Adjust the final position as needed */
+  bottom: 15px; /* Adjust the final position as needed */
 }
 
 .navigation--el a {
@@ -172,8 +179,9 @@ footer {
 .caravan-image:hover,
 .caravan-card:focus .caravan-image {
   transform: scale(1.1);
-  opacity: .7;
-  border: none; /* Set a fixed height */
+  /* opacity: 0.5; */
+  border: none;
+  background-color: #d2d3d2; /* Set a fixed height */
   /* object-fit: cover; 
   border: 1px solid gray;
   border-radius: 4px;
@@ -190,6 +198,43 @@ footer {
   box-shadow: 0 0 20px rgb(165, 162, 162);
 }
 
+.caravans-container-bottom {
+  width: 100%;
+  height: auto;
+  margin-top: -2em;
+}
+
+.caravan-image-bottom {
+  width: 100%;
+  height: auto;
+}
+
+.caravans-container-bottom-text {
+  color: #161616;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+.caravans-family-container {
+  max-width: 1450px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(165, 162, 162);
+  padding: 10px 25px;
+}
+
+.caravans-family-text {
+  color: #161616;
+}
+
+@media screen and (min-width: 800px) {
+  .caravans-container-bottom-text {
+    text-align: left;
+    margin-left: 220px;
+  }
+}
+
 .caravan-description {
   color: #161616;
   font-weight: 600;
@@ -202,6 +247,12 @@ footer {
   font-weight: 500;
   cursor: pointer;
 
+}
+
+.caravan--detail--image {
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 
@@ -255,6 +306,12 @@ footer {
     transition: 0.2s ease-in-out; */
   }
 
+
+  .caravan--detail--image {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
 } 
 
 /* ............................. Caravan Detail Page */
@@ -270,12 +327,6 @@ footer {
   color: #161616;
 }
 
-
-.caravan--detail--image {
-  width: 800px;
-  margin-top: 50px;
-  margin-bottom: 80px;
-}
 
 .caravan-detail {
   display: flex;
@@ -300,6 +351,16 @@ footer {
   right: 650px;
   top: 10px;
   box-shadow: 0 0 10px ;
+}
+
+.link-button {
+  padding: 6px 12px;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 3px;
+  background-color: #23502B;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 
 
