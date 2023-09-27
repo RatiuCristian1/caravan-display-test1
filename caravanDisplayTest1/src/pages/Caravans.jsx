@@ -69,7 +69,7 @@ export default function Caravans() {
     </div>
     <div className="caravans-family-container">
       <h3 className="caravans-family-text">Embrace your family</h3>
-      <p className="caravans-family-text">We understand that families are incredibly diverse, as are their preferences when it comes to holidays. Whether large or small, regardless of the type and arrangement, every family is unique and incomparable – just like the world of caravanning. We therefore set ourselves the task of creating the right travel companion for every family. With our wide range of vehicles, from urban campers to luxury motorhomes, there is plenty to choose from.</p>
+      <p className="caravans-family-text-p">We understand that families are incredibly diverse, as are their preferences when it comes to holidays. Whether large or small, regardless of the type and arrangement, every family is unique and incomparable – just like the world of caravanning. We therefore set ourselves the task of creating the right travel companion for every family. With our wide range of vehicles, from urban campers to luxury motorhomes, there is plenty to choose from.</p>
     </div>
   </>
   );
