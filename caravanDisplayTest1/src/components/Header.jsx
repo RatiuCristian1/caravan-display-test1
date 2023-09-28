@@ -13,6 +13,7 @@ export default function Header() {
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/caravans">Caravans</Link>
+                <Link to="/login"><span className="material-symbols-outlined">account_circle</span></Link>
             </nav>
         </header>
     )
