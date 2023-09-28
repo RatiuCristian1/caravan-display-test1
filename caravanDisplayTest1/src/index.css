@@ -290,7 +290,7 @@ footer {
 
 .caravans-family-container {
   max-width: 1450px;
-  margin: 80px auto 50px;
+  margin: 80px auto 80px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgb(165, 162, 162);
@@ -434,13 +434,14 @@ footer {
 }
 
 .link-button {
-  padding: 6px 12px;
-  margin-bottom: 1em;
+  padding: 10px 20px;
+  margin: 2em 0em;
   border: none;
   border-radius: 3px;
   background-color: #23502B;
   color: #ffffff;
   font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .about--container--1 {

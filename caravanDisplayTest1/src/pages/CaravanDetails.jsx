@@ -53,7 +53,7 @@ export default function CaravanDetail() {
                     <h2>{van.name}</h2>
                     <p className="caravan-price"><span>${van.price}</span>/day</p>
                     <p className="caravan--details-description">{van.description}</p>
-                    <Link to={'/login'}  className="link-button">Rent this van</Link>
+                    <Link to='/login'  className="link-button">Rent this van</Link>
                 </div>
             )}
         </div>
