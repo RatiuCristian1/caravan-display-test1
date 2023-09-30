@@ -147,6 +147,25 @@ nav  {
 
   .home--welcome--paragraph {
     font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    text-shadow: 0px 0px 10px #26693a;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .home--welcome {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 0px 0px 10px #26693a;
+  }
+
+  .home--welcome--paragraph {
+    font-size: 1.1rem;
+    font-weight: 500;
     letter-spacing: 1.5px;
     line-height: 1.4;
     text-shadow: 0px 0px 10px #26693a;
@@ -168,7 +187,8 @@ nav  {
   bottom: 80px;
   transition: bottom 1s ease;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-  border: 0.4px solid rgb(20, 146, 41);
+  /* border: 0.4px solid rgb(20, 146, 41); */
+  border: 0.4px solid rgb(90, 92, 91);
   
 }
 
@@ -444,41 +464,7 @@ footer {
   text-decoration: none;
 }
 
-.about--container--1 {
-  width: 90%;
-  margin: 1em auto;
-
-}
-
-.about--image--1 {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
-.about--header--1 {
-  margin-top: 1em;
-  border-radius: 5px;
-  background-color: rgba(28, 124, 4, 0.541);
-  padding: 5px 10px;
-  color: #ffffff;
-}
-
-.about--header--top {
-  color: #ffffff;
-  font-size: 1.3rem;
-  text-align: center;
-  letter-spacing: 1.3px;
-  line-height: 1.5;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.863);
-}
-
-.about--header--bottom {
-  font-size: 1.1rem;
-  letter-spacing: 1.2px;
-  font-weight: 500;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.863);
-}
+/* ....................................About Page */
 
 @media screen and (min-width: 800px) {
 
@@ -486,7 +472,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    margin: 1em auto;
   }
 
   .about--image--1 {
@@ -494,6 +481,12 @@ footer {
     height: auto;
     border-radius: 5px;
     margin: 0;
+  }
+
+
+  .about--image--8 {
+    width: 100%;
+    height: auto;
   }
 
   .about--header--1 {
@@ -505,6 +498,8 @@ footer {
     background-repeat: no-repeat;
     background-position-x: 100px;
     background-position-y: 100px;
+    background-color: rgba(28, 124, 4, 0.541);
+    border-radius: 5px;
   }
 
   .about--header--top {
@@ -531,9 +526,38 @@ footer {
   }
 }
 
-.about--image--8 {
-  width: 100%;
-  height: auto;
+@media screen and (max-width: 800px)  {
+  .about--container--1 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about--header--1 {
+    width: 100%;
+    height: auto;
+    padding: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    background-color: rgba(28, 124, 4, 0.541);
+  }
+
+  .about--image--1 {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px auto;
+  }
+
+  .about--image--8 {
+    width: 100%;
+    height: auto;
+  }
+
+
 }
 
 .reasons--list {
