@@ -84,7 +84,7 @@ nav  {
 }
 
 .site--logo--image {
-  background-image: url(assets/images/logo3.png);
+  background-image: url(images/logo3.png);
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -103,7 +103,7 @@ nav  {
 
 .home--container {
   height: 92.25vh;
-  background-image: url(assets/images/alpina_Caravan_cover.jpg);
+  background-image: url(images/alpina_Caravan_cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
@@ -493,7 +493,7 @@ footer {
     width: 48%;
     height: auto;
     margin: 0;
-    background-image: url(assets/images/about4.png);
+    background-image: url(images/about4.png);
     background-size: calc(900px);
     background-repeat: no-repeat;
     background-position-x: 100px;
